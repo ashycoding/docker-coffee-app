@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff & Cluster Operations | ROAST & RITUAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #94a3b8; }
+    .dot.ok { background: #10b981; box-shadow: 0 0 8px #10b981; }
+    .dot.bad { background: #ef4444; box-shadow: 0 0 8px #ef4444; }
+  </style>
+</head>
+<body data-page="admin">
+<div id="site-header"></div>
+<main id="app">
+  <section class="page-head" style="background:linear-gradient(135deg, #180f0a 0%, #28180e 100%); color:#fff; padding:56px 0;">
+    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+      <div style="text-align:left;">
+        <span class="eyebrow" style="color:var(--color-gold);">Containerized Microservices</span>
+        <h1 class="title-serif" style="font-size:2.4rem; margin-top:4px;">Roastery Operations Console</h1>
+        <p style="color:#d6c8bc;">Live real-time metrics synced directly from Docker, Node.js & PostgreSQL 16</p>
+      </div>
+      <button class="btn accent" type="button" id="refresh">Refresh Store Data</button>
+    </div>
+  </section>
+
+  <div class="wrap section">
+    <div class="features" id="tiles" style="margin-bottom:40px;"></div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:36px; align-items:start;">
+      <section>
+        <h2 class="title-serif" style="font-size:1.8rem; color:var(--color-primary); margin-bottom:16px;">Dispatches & Customer Orders</h2>
+        <div id="orders"></div>
+      </section>
+
+      <aside style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:28px; box-shadow:var(--shadow-sm);">
+        <h3 class="title-serif" style="font-size:1.4rem; margin-bottom:18px; color:var(--color-primary);">Docker Cluster Health</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="display:flex; align-items:center; gap:12px; padding:14px; background:var(--bg-tint); border-radius:12px;">
+            <span class="dot ok"></span>
+            <div>
+              <strong style="font-size:0.92rem; display:block;">Frontend Web Server</strong>
+              <small style="color:var(--text-muted);">Nginx 1.27 Alpine · Reverse Proxy</small>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; padding:14px; background:var(--bg-tint); border-radius:12px;">
+            <span class="dot" id="dot-api"></span>
+            <div>
+              <strong style="font-size:0.92rem; display:block;">Node.js Express API</strong>
+              <small id="info-api" style="color:var(--text-muted);">Checking...</small>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px; padding:14px; background:var(--bg-tint); border-radius:12px;">
+            <span class="dot" id="dot-db"></span>
+            <div>
+              <strong style="font-size:0.92rem; display:block;">PostgreSQL 16 Database</strong>
+              <small id="info-db" style="color:var(--text-muted);">Checking...</small>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section style="margin-top:56px;">
+      <h2 class="title-serif" style="font-size:1.8rem; color:var(--color-primary); margin-bottom:16px;">Inquiries & Brewing Questions</h2>
+      <div id="messages"></div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

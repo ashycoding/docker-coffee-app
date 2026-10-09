@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Specialty Coffee & Menu | ROAST & RITUAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main id="app">
+  <section class="section" style="background:var(--bg-dark); color:#fff; padding:64px 0;">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow" style="color:var(--color-gold);">Coffee Catalog</span>
+      <h1 class="title-serif" style="font-size:2.8rem; margin-bottom:12px;">Complete Menu &amp; Estate Selection</h1>
+      <p style="color:#d6c8bc; max-width:640px; margin:0 auto;">Browse single-origin estate roasts, 18-hour cold brew extractions, decadent signature lattes, and ceremonial teas.</p>
+    </div>
+  </section>
+
+  <div class="wrap section">
+    <!-- Filters & Search Toolbar -->
+    <div style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-sm); margin-bottom:32px;">
+      <!-- Category Tabs -->
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; border-bottom:1px solid var(--color-border-light); padding-bottom:16px;">
+        <button class="mood-pill active" type="button" data-filter-cat="All">All Items (42)</button>
+        <button class="mood-pill" type="button" data-filter-cat="Coffee Classics">Coffee Classics</button>
+        <button class="mood-pill" type="button" data-filter-cat="Cold Coffee">Cold Coffee &amp; Brews</button>
+        <button class="mood-pill" type="button" data-filter-cat="Specialty / Modern">Specialty Lattes</button>
+        <button class="mood-pill" type="button" data-filter-cat="Matcha & Tea">Matcha &amp; Tea</button>
+        <button class="mood-pill" type="button" data-filter-cat="Coffee Beans">Whole Estate Beans</button>
+        <button class="mood-pill" type="button" data-filter-cat="Gear & Gifts">Gear &amp; Gift Sets</button>
+      </div>
+
+      <!-- Secondary Filters & Search -->
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <!-- Temperature Pill -->
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-filter-temp="All">All Temperatures</button>
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-filter-temp="Hot">Hot Drinks</button>
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-filter-temp="Cold">Iced Drinks</button>
+
+          <!-- Budget Range Filters -->
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-price-range="0-200">Under ₹200</button>
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-price-range="200-350">₹200 – ₹350</button>
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-price-range="350-600">₹350 – ₹600</button>
+          <button class="spec-pill" style="cursor:pointer; padding:6px 12px;" data-price-range="600-3000">₹600+ Luxury</button>
+        </div>
+
+        <div style="display:flex; gap:12px; align-items:center;">
+          <input id="shop-search" type="search" placeholder="Search drinks, notes, estates..." style="padding:10px 18px; border:1px solid var(--color-border); border-radius:var(--radius-full); font-family:inherit; font-size:0.9rem; outline:none; width:220px;">
+          <select id="shop-sort" style="padding:10px 16px; border:1px solid var(--color-border); border-radius:var(--radius-full); background:#fff; font-family:inherit; font-size:0.9rem; outline:none;">
+            <option value="featured">Sort: Featured</option>
+            <option value="price_asc">Price: Low to High</option>
+            <option value="price_desc">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p id="shop-count" style="margin-bottom:24px; font-weight:700; color:var(--text-light); font-size:0.95rem;"></p>
+    <div class="product-grid" id="shop-grid"></div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

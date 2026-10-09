@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROAST & RITUAL | From Bean to Your Perfect Cup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main id="app">
+  <!-- 1. CINEMATIC HERO SECTION -->
+  <section class="hero-editorial">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge-pill">Artisanal Roastery &amp; Specialty Bar</span>
+        <h1>From Bean to Your Perfect Cup.</h1>
+        <p class="hero-sub">Discover coffee crafted for every mood, moment, and budget. Sourced from high-altitude Indian estates, micro-roasted with obsession.</p>
+        
+        <div class="hero-cta-group">
+          <a class="btn accent" href="shop.html">Explore Coffee Menu</a>
+          <button class="btn ghost-light" type="button" data-customize="3">Build Your Cup</button>
+        </div>
+
+        <div style="margin-top:28px; display:flex; align-items:center; gap:20px; font-size:0.88rem; color:#f7dcb6;">
+          <span>Single-Origin Terroir</span>
+          <span>&middot;</span>
+          <span>Complimentary Delivery over ₹499</span>
+          <span>&middot;</span>
+          <span>100% Shade-Grown</span>
+        </div>
+      </div>
+
+      <div class="hero-gallery-wrap">
+        <div class="hero-card-frame">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="Artisan Pour Over Coffee">
+        </div>
+        <div class="hero-floating-glass">
+          <div>
+            <strong style="display:block; font-size:1.1rem; color:#ffffff;">Baba Budangiri Estate</strong>
+            <small style="color:#d6c8bc;">Single Origin Arabica &middot; 1400m Western Ghats</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. COFFEE CATEGORIES SECTION -->
+  <section class="section wrap">
+    <div style="text-align:center; max-width:680px; margin:0 auto 48px;">
+      <span class="eyebrow">Curated Collections</span>
+      <h2 class="title-serif" style="font-size:2.4rem; color:var(--color-primary);">Crafted For Every Palate</h2>
+      <p style="color:var(--text-muted);">From timeless hot classics and 18-hour cold extractions to decadent modern lattes and ceremonial botanicals.</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="category-card">
+        <div class="category-thumb">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Coffee Classics">
+        </div>
+        <h3>Coffee Classics</h3>
+        <p>Espresso, Americano, Cappuccino, Flat White, Cortado, Macchiato, and Traditional Filter Kaapi.</p>
+        <a class="category-link" href="shop.html?cat=Coffee Classics">Explore Classics &rarr;</a>
+      </div>
+
+      <div class="category-card">
+        <div class="category-thumb">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Cold Coffee & Cold Brew">
+        </div>
+        <h3>Cold Coffee &amp; Brews</h3>
+        <p>18-hour slow steep Cold Brews, Nitro on Tap, Iced Lattes, and Sweet Cream Chillers.</p>
+        <a class="category-link" href="shop.html?cat=Cold Coffee">Explore Cold Brews &rarr;</a>
+      </div>
+
+      <div class="category-card">
+        <div class="category-thumb">
+          <img src="https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=800&q=80" alt="Specialty Lattes">
+        </div>
+        <h3>Specialty / Modern</h3>
+        <p>Spanish Latte, Roasted Pistachio Silk, Salted Caramel Crunch, and Hazelnut Praline infusions.</p>
+        <a class="category-link" href="shop.html?cat=Specialty / Modern">Explore Specialty &rarr;</a>
+      </div>
+
+      <div class="category-card">
+        <div class="category-thumb">
+          <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" alt="Ceremonial Matcha">
+        </div>
+        <h3>Matcha &amp; Botanicals</h3>
+        <p>First-harvest Uji Matcha Latte, Dirty Matcha, and Layered Strawberry Cloud Green Tea.</p>
+        <a class="category-link" href="shop.html?cat=Matcha & Tea">Explore Matcha &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Essential Matcha Knowledge Banner -->
+    <div class="matcha-disclaimer-banner">
+      <div>
+        <h4>Note on Matcha: Green Tea Powder, Not Coffee Beans</h4>
+        <p>Matcha is made from finely stone-ground, shade-grown Japanese green tea leaves rich in chlorophyll and antioxidants. It contains clean natural tea caffeine and zero espresso, unless you order the <strong>"Dirty Matcha"</strong> (Matcha + Espresso shot).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. "WHAT ARE YOU IN THE MOOD FOR?" (RECOMMENDATION SYSTEM) -->
+  <section class="section tint">
+    <div class="wrap">
+      <div style="text-align:center; max-width:640px; margin:0 auto;">
+        <span class="eyebrow">Smart Drink Finder</span>
+        <h2 class="title-serif" style="font-size:2.4rem; color:var(--color-primary);">What are you in the mood for?</h2>
+        <p style="color:var(--text-muted);">Select your preference and let our roaster match the appropriate beverage.</p>
+      </div>
+
+      <div class="mood-picker-wrap">
+        <div class="mood-pills" style="justify-content:center;">
+          <button class="mood-pill active" type="button" data-mood="energy">Energy &amp; High Caffeine</button>
+          <button class="mood-pill" type="button" data-mood="sweet">Sweet &amp; Dessert Notes</button>
+          <button class="mood-pill" type="button" data-mood="creamy">Velvety &amp; Creamy</button>
+          <button class="mood-pill" type="button" data-mood="cold">Cold &amp; Refreshing</button>
+          <button class="mood-pill" type="button" data-mood="light">Light &amp; Botanical</button>
+          <button class="mood-pill" type="button" data-mood="luxury">Rare &amp; Luxury Reserve</button>
+        </div>
+
+        <div class="product-grid" id="mood-results"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. "COFFEE FOR EVERY BUDGET" (BUDGET → LUXURY RANGE) -->
+  <section class="section wrap">
+    <div style="text-align:center; max-width:680px; margin:0 auto 32px;">
+      <span class="eyebrow">Transparent Value</span>
+      <h2 class="title-serif" style="font-size:2.4rem; color:var(--color-primary);">Coffee for Every Budget</h2>
+      <p style="color:var(--text-muted);">From daily morning fuel to rare competition-grade auction lots, discover the right cup at honest prices.</p>
+    </div>
+
+    <div class="budget-tiers-grid">
+      <div class="budget-tier-card">
+        <span class="budget-tier-tag">Everyday Coffee</span>
+        <div class="budget-tier-price">₹99 – ₹199</div>
+        <p class="budget-tier-desc">Classic Americano, Single Espresso, Iced Americano, and Traditional Filter Kaapi.</p>
+      </div>
+
+      <div class="budget-tier-card">
+        <span class="budget-tier-tag">Café Classics</span>
+        <div class="budget-tier-price">₹200 – ₹299</div>
+        <p class="budget-tier-desc">Artisanal Cappuccino, Silky Latte, Flat White, Belgian Mocha, and 18hr Cold Brew.</p>
+      </div>
+
+      <div class="budget-tier-card">
+        <span class="budget-tier-tag">Specialty Drinks</span>
+        <div class="budget-tier-price">₹300 – ₹499</div>
+        <p class="budget-tier-desc">Spanish Latte, Roasted Pistachio Silk, Dirty Matcha, and Single-Origin Whole Beans (250g).</p>
+      </div>
+
+      <div class="budget-tier-card" style="border-color:var(--color-gold); background:#fffdfa;">
+        <span class="budget-tier-tag" style="color:#996515;">Luxury &amp; Reserve</span>
+        <div class="budget-tier-price" style="color:#996515;">₹500 – ₹1,500+</div>
+        <p class="budget-tier-desc">Panama Boquete Geisha, Araku Micro-Lots, Brass Brewing Sets, and Grand Gift Sets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED CURATED HARVEST -->
+  <section class="section tint">
+    <div class="wrap">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span class="eyebrow">Signature Menu</span>
+          <h2 class="title-serif" style="font-size:2.3rem; color:var(--color-primary);">Featured Roasts &amp; Drinks</h2>
+        </div>
+        <a href="shop.html" class="btn outline small">View All Catalog &rarr;</a>
+      </div>
+
+      <div class="product-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
+  <!-- 6. "KNOW YOUR COFFEE" EDUCATIONAL GUIDE -->
+  <section class="section wrap" id="guide">
+    <div style="text-align:center; max-width:700px; margin:0 auto 48px;">
+      <span class="eyebrow">Brewing Reference</span>
+      <h2 class="title-serif" style="font-size:2.4rem; color:var(--color-primary);">Know Your Coffee</h2>
+      <p style="color:var(--text-muted);">Understand exact ingredient ratios, milk texturing, caffeine profiles, and caloric estimates before you order.</p>
+    </div>
+
+    <div class="knowledge-grid">
+      <!-- 1. Espresso -->
+      <div class="knowledge-card">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-primary);">Espresso</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Concentrated extraction forced under 9 bars of pressure. Rich, thick crema and maximum flavor density.</p>
+        <div class="ratio-bar">
+          <span>Ratio (Espresso : Water)</span>
+          <span class="ratio-num">1 : 0</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 5/5 (Very Strong) &middot; <strong>Caffeine:</strong> High</div>
+          <div><strong>Milk:</strong> None &middot; <strong>Sweetness:</strong> Zero &middot; <strong>Calories:</strong> ~2 kcal</div>
+          <div><strong>Best Time:</strong> Early morning / Quick afternoon boost</div>
+        </div>
+      </div>
+
+      <!-- 2. Cappuccino -->
+      <div class="knowledge-card">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-primary);">Cappuccino</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Equal thirds of rich espresso, sweet steamed milk, and a thick cushion of velvety microfoam.</p>
+        <div class="ratio-bar">
+          <span>Ratio (Espresso : Milk : Foam)</span>
+          <span class="ratio-num">1 : 1 : 1</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 4/5 (Strong) &middot; <strong>Caffeine:</strong> Medium-High</div>
+          <div><strong>Milk:</strong> Equal parts steamed &amp; froth &middot; <strong>Calories:</strong> ~130 kcal</div>
+          <div><strong>Best Time:</strong> Traditional breakfast beverage</div>
+        </div>
+      </div>
+
+      <!-- 3. Café Latte -->
+      <div class="knowledge-card">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-primary);">Café Latte</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Generous steamed milk over espresso with a thin microfoam sheet. Milkier, softer, and smoother than a cappuccino.</p>
+        <div class="ratio-bar">
+          <span>Ratio (Espresso : Milk : Foam)</span>
+          <span class="ratio-num">1 : 3 : 1</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 3/5 (Medium) &middot; <strong>Caffeine:</strong> Medium</div>
+          <div><strong>Milk:</strong> High volume steamed milk &middot; <strong>Calories:</strong> ~165 kcal</div>
+          <div><strong>Best Time:</strong> Mid-morning or relaxing afternoon</div>
+        </div>
+      </div>
+
+      <!-- 4. Americano -->
+      <div class="knowledge-card">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-primary);">Americano</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Double shot of espresso diluted with pure hot water. Retains the nuanced bean character with zero dairy.</p>
+        <div class="ratio-bar">
+          <span>Ratio (Espresso : Hot Water)</span>
+          <span class="ratio-num">1 : 2</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 4/5 (Strong) &middot; <strong>Caffeine:</strong> High</div>
+          <div><strong>Water:</strong> Filtered hot water &middot; <strong>Calories:</strong> ~5 kcal</div>
+          <div><strong>Best Time:</strong> All-day clean sipping</div>
+        </div>
+      </div>
+
+      <!-- 5. Flat White -->
+      <div class="knowledge-card">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-primary);">Flat White</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">Double ristretto combined seamlessly with velvety microfoam. Coffee-forward punch with a smooth texture.</p>
+        <div class="ratio-bar">
+          <span>Ratio (Double Ristretto : Microfoam)</span>
+          <span class="ratio-num">1 : 2 : 0</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 4/5 (Strong) &middot; <strong>Caffeine:</strong> High</div>
+          <div><strong>Milk:</strong> Microfoam only, no stiff froth &middot; <strong>Calories:</strong> ~125 kcal</div>
+          <div><strong>Best Time:</strong> Morning focus &amp; work sprint</div>
+        </div>
+      </div>
+
+      <!-- 6. Ceremonial Matcha Latte -->
+      <div class="knowledge-card" style="border-color:#b7d6be; background:#fbfdfb;">
+        <h3 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-matcha);">Matcha Latte (Green Tea)</h3>
+        <p style="color:var(--text-muted); font-size:0.88rem;">100% shade-grown green tea powder from Uji, Japan whisked with steamed milk. Clean sustained calm alertness.</p>
+        <div class="ratio-bar" style="background:#eef5f0;">
+          <span>Composition (Matcha : Milk)</span>
+          <span class="ratio-num" style="color:var(--color-matcha);">No Coffee</span>
+        </div>
+        <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.7;">
+          <div><strong>Strength:</strong> 2/5 (Mild) &middot; <strong>Caffeine:</strong> Tea Polyphenols</div>
+          <div><strong>Base:</strong> 1st Harvest Green Tea Leaf &middot; <strong>Calories:</strong> ~120 kcal</div>
+          <div><strong>Best Time:</strong> Afternoon focus without coffee jitters</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. COFFEE COMPARISON MATRIX -->
+  <section class="section tint" id="compare">
+    <div class="wrap">
+      <div style="text-align:center; max-width:680px; margin:0 auto 36px;">
+        <span class="eyebrow">Quick Reference</span>
+        <h2 class="title-serif" style="font-size:2.4rem; color:var(--color-primary);">Coffee Comparison Matrix</h2>
+        <p style="color:var(--text-muted);">Side-by-side breakdown to help you pick the exact beverage for your taste.</p>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Coffee Beverage</th>
+              <th>Strength Scale</th>
+              <th>Milk Volume</th>
+              <th>Sweetness Level</th>
+              <th>Caffeine Profile</th>
+              <th>Price (INR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Espresso</strong></td>
+              <td>5 / 5 (High)</td>
+              <td>None</td>
+              <td>Zero</td>
+              <td>High</td>
+              <td><strong>₹140</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Americano</strong></td>
+              <td>4 / 5 (Strong)</td>
+              <td>None (Water)</td>
+              <td>Zero</td>
+              <td>High</td>
+              <td><strong>₹170</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Cappuccino</strong></td>
+              <td>4 / 5 (Balanced)</td>
+              <td>Medium (1:1 Milk &amp; Foam)</td>
+              <td>Low</td>
+              <td>Medium-High</td>
+              <td><strong>₹220</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Café Latte</strong></td>
+              <td>3 / 5 (Smooth)</td>
+              <td>High (1:3 Steamed Milk)</td>
+              <td>Medium</td>
+              <td>Medium</td>
+              <td><strong>₹240</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Flat White</strong></td>
+              <td>4 / 5 (Intense)</td>
+              <td>Medium (Microfoam)</td>
+              <td>Low</td>
+              <td>High</td>
+              <td><strong>₹250</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Belgian Mocha</strong></td>
+              <td>3 / 5 (Rich)</td>
+              <td>High + Dark Cocoa</td>
+              <td>High</td>
+              <td>Medium</td>
+              <td><strong>₹280</strong></td>
+            </tr>
+            <tr>
+              <td><strong>18hr Cold Brew</strong></td>
+              <td>4 / 5 (Clean)</td>
+              <td>None (Zero Acid)</td>
+              <td>Low (Natural)</td>
+              <td>High</td>
+              <td><strong>₹260</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Spanish Latte</strong></td>
+              <td>3 / 5 (Sweet)</td>
+              <td>Condensed &amp; Steamed Milk</td>
+              <td>High</td>
+              <td>Medium</td>
+              <td><strong>₹320</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Ceremonial Matcha</strong></td>
+              <td>2 / 5 (Gentle)</td>
+              <td>High (Oat / Dairy)</td>
+              <td>Medium</td>
+              <td>Tea Caffeine</td>
+              <td><strong>₹280</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Dirty Matcha</strong></td>
+              <td>4 / 5 (Layered)</td>
+              <td>Medium (Matcha + Espresso)</td>
+              <td>Medium</td>
+              <td>High</td>
+              <td><strong>₹320</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. ROASTERY & FOUNDER NOTE -->
+  <section class="section wrap">
+    <div style="background:var(--bg-dark); color:#ffffff; border-radius:var(--radius-lg); padding:56px; display:grid; grid-template-columns:1.4fr 1fr; gap:40px; align-items:center; box-shadow:var(--shadow-md);">
+      <div>
+        <span class="eyebrow" style="color:var(--color-gold);">Architecture &amp; Origin</span>
+        <h2 style="font-family:var(--font-serif); font-size:2.2rem; margin-bottom:14px; line-height:1.2;">Every cup has a character.</h2>
+        <p style="color:#d6c8bc; font-size:1.05rem; line-height:1.7; margin-bottom:24px;">
+          Developed with a containerized microservices architecture on Docker, PostgreSQL, and Express by <strong>Ashok Gangwar</strong> (B.Tech CSE AIML 3rd Year, KIET Deemed to be University, Ghaziabad).
+        </p>
+        <a href="about.html" class="btn accent">View Founder &amp; Architecture &rarr;</a>
+      </div>
+      <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid rgba(255,255,255,0.15);">
+        <img src="ashok.jpg" onerror="this.onerror=null; this.src='IMG_2099.JPG';" alt="Ashok Gangwar" style="width:100%; height:320px; object-fit:cover;">
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

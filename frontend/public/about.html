@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About & Founder | ROAST & RITUAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .founder-editorial-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 56px;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-sm);
+      margin: 40px 0 64px;
+    }
+    .founder-portrait {
+      width: 100%;
+      height: 440px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-tint);
+      border: 1px solid var(--color-border);
+    }
+    .founder-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .meta-label {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .spec-table {
+      width: 100%;
+      margin: 24px 0;
+      border-collapse: collapse;
+    }
+    .spec-table td {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-border-light);
+      font-size: 0.92rem;
+    }
+    .spec-table td:first-child {
+      color: var(--text-light);
+      font-weight: 600;
+      width: 140px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+    .spec-table td:last-child {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+    @media (max-width: 900px) {
+      .founder-editorial-grid {
+        grid-template-columns: 1fr;
+        padding: 32px;
+      }
+      .founder-portrait {
+        height: 380px;
+      }
+    }
+  </style>
+</head>
+<body data-page="about">
+<div id="site-header"></div>
+
+<main id="app">
+  <!-- Minimal Page Head -->
+  <section class="section" style="background: var(--bg-dark); color: #fff; padding: 72px 0 64px;">
+    <div class="wrap" style="text-align: center; max-width: 760px;">
+      <span class="meta-label" style="color: var(--color-gold);">Architecture & Philosophy</span>
+      <h1 class="title-serif" style="font-size: 2.8rem; margin-bottom: 12px; line-height: 1.15;">Craft, Origin, and Engineering</h1>
+      <p style="color: #c9ded9; font-size: 1.1rem; line-height: 1.6;">A modern microservices-driven specialty coffee platform designed for precision, transparency, and single-origin excellence.</p>
+    </div>
+  </section>
+
+  <div class="wrap section" style="padding-top: 56px;">
+    <!-- Minimal Professional Founder Profile Card -->
+    <div class="founder-editorial-grid" id="founder">
+      <div class="founder-portrait">
+        <img src="ashok.jpg" onerror="this.onerror=null; this.src='IMG_2099.JPG';" alt="Ashok Gangwar">
+      </div>
+
+      <div>
+        <span class="meta-label">Founder & Systems Architect</span>
+        <h2 class="title-serif" style="font-size: 2.4rem; color: var(--color-primary); margin-bottom: 4px;">Ashok Gangwar</h2>
+        <p style="font-size: 1rem; color: var(--color-accent); font-weight: 600; margin-bottom: 16px;">AI/ML Engineer & Full-Stack Developer</p>
+        
+        <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 20px;">
+          Developed and architected ROAST & RITUAL as an end-to-end containerized microservices platform. The application combines high-performance Node.js REST services, transactional PostgreSQL database clustering, and Nginx reverse proxy routing with an editorial e-commerce user experience.
+        </p>
+
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <td>Academic Role</td>
+              <td>B.Tech in Computer Science & Engineering (AIML) &middot; 3rd Year</td>
+            </tr>
+            <tr>
+              <td>Institution</td>
+              <td>KIET Deemed to be University, Ghaziabad (201206), Delhi-NCR</td>
+            </tr>
+            <tr>
+              <td>Core Stack</td>
+              <td>Docker, Docker Compose, Node.js, Express, PostgreSQL 16, Nginx</td>
+            </tr>
+            <tr>
+              <td>Specialization</td>
+              <td>Distributed Systems, Container Orchestration, Scalable Web Architecture</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;">
+          <span class="tech-chip">Docker</span>
+          <span class="tech-chip">Node.js</span>
+          <span class="tech-chip">PostgreSQL</span>
+          <span class="tech-chip">Nginx</span>
+          <span class="tech-chip">AI/ML</span>
+          <span class="tech-chip">Microservices</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Heritage & Roast Philosophy -->
+    <div style="max-width: 860px; margin: 0 auto;">
+      <span class="meta-label">Origin & Heritage</span>
+      <h2 class="title-serif" style="font-size: 2.2rem; color: var(--color-primary); margin-bottom: 18px;">The Indian Specialty Coffee Legacy</h2>
+      <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+        India is one of the few coffee-producing regions in the world where 100% of the coffee is cultivated under natural shade canopies. Sourced from high-elevation estates across the Western and Eastern Ghats—including Chikmagalur, Coorg, Araku Valley, and the Nilgiris—our coffees develop dense bean structures and balanced sweetness.
+      </p>
+
+      <div class="categories-grid" style="margin-top: 36px;">
+        <div class="category-card">
+          <h3 style="font-size: 1.15rem;">Single-Estate Traceability</h3>
+          <p>Direct sourcing from verified estates and cooperatives with transparent lot identification and elevation data.</p>
+        </div>
+
+        <div class="category-card">
+          <h3 style="font-size: 1.15rem;">Micro-Batch Roasting</h3>
+          <p>Roasted in small 5kg batches to calibrate airflow, drum velocity, and thermal drop temperatures precisely.</p>
+        </div>
+
+        <div class="category-card">
+          <h3 style="font-size: 1.15rem;">Containerized Architecture</h3>
+          <p>Production-ready container deployment ensuring decoupled services, reproducible builds, and high availability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Brewing Lab | ROAST & RITUAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main id="app">
+  <section class="page-head" style="background:linear-gradient(135deg, #180f0a 0%, #28180e 100%); color:#fff; padding:64px 0;">
+    <div class="wrap" style="text-align:center;">
+      <span class="eyebrow" style="color:var(--color-gold);">Brewing Concierge</span>
+      <h1 class="title-serif" style="font-size:2.8rem; margin-bottom:12px;">Ask a Master Roaster</h1>
+      <p style="color:#d6c8bc; max-width:640px; margin:0 auto;">Questions on grind particle size, pour-over water ratios, or estate micro-lots? We are here to help.</p>
+    </div>
+  </section>
+
+  <div class="wrap section" style="display:grid; grid-template-columns:1.4fr 1fr; gap:40px; align-items:start;">
+    <div style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm);" id="contact-card">
+      <h2 class="title-serif" style="font-size:1.8rem; margin-bottom:6px; color:var(--color-primary);">Send Us a Message</h2>
+      <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:24px;">Drop us a note below and our sensory team will respond within 24 hours.</p>
+      
+      <form id="contact-form" novalidate>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label style="display:block; font-size:0.85rem; font-weight:700; margin-bottom:6px;">Your Name *</label>
+          <input id="name" name="name" placeholder="Ashok Gangwar" required autocomplete="name" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:8px;">
+        </div>
+        <div class="form-group" style="margin-bottom:16px;">
+          <label style="display:block; font-size:0.85rem; font-weight:700; margin-bottom:6px;">Email Address *</label>
+          <input id="email" name="email" type="email" placeholder="ashok@example.com" required autocomplete="email" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:8px;">
+        </div>
+        <div class="form-group" style="margin-bottom:20px;">
+          <label style="display:block; font-size:0.85rem; font-weight:700; margin-bottom:6px;">Your Inquiry / Coffee Query *</label>
+          <textarea id="message" name="message" rows="5" placeholder="How do I dial in the grind for the Chikmagalur Arabica in a manual V60 pour over?" required maxlength="1000" style="width:100%; padding:12px 16px; border:1px solid var(--color-border); border-radius:8px; font-family:inherit;"></textarea>
+        </div>
+        <p id="form-error" style="color:#dc2626; background:#fef2f2; padding:10px 14px; border-radius:8px; margin-bottom:16px; font-size:0.9rem;" hidden></p>
+        <button class="btn accent" type="submit" id="send" style="width:100%; padding:15px; font-size:1.05rem;">Send Inquiry to Roastery</button>
+      </form>
+    </div>
+
+    <aside style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:36px;">
+      <span class="eyebrow">Roastery & Lab</span>
+      <h3 class="title-serif" style="font-size:1.6rem; color:var(--color-primary); margin-bottom:12px;">The Roastery Hub</h3>
+      <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:24px;">
+        ROAST & RITUAL Roastery Lab<br>
+        Indirapuram / Ghaziabad, Uttar Pradesh 201206<br>
+        Delhi NCR, India
+      </p>
+
+      <h4 style="font-family:var(--font-display); font-size:1.1rem; color:var(--color-primary); margin-bottom:8px;">Cupping & Dispatch Hours</h4>
+      <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.7; margin-bottom:24px;">
+        Monday – Saturday: 8:00 AM – 7:30 PM IST<br>
+        Sunday: Roasting & Sensory Calibration
+      </p>
+
+      <div style="background:var(--bg-tint); padding:18px; border-radius:12px; border:1px solid var(--color-border);">
+        <strong style="color:var(--color-primary); font-size:0.95rem; display:block;">Lead Architect: Ashok Gangwar</strong>
+        <p style="font-size:0.82rem; color:var(--text-muted); margin-top:2px;">B.Tech CSE (AIML) · KIET Deemed to be University</p>
+      </div>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+services:
+  # Database service running PostgreSQL 16
+  db:
+    image: postgres:16-alpine
+    container_name: dockside-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-dockside}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dockside}
+      POSTGRES_DB: ${DB_NAME:-dockside}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-dockside} -d ${DB_NAME:-dockside}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+    networks:
+      - dockside-net
+
+  # Backend REST API (Node.js + Express)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dockside-backend
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      DB_HOST: db
+      DB_USER: ${DB_USER:-dockside}
+      DB_PASSWORD: ${DB_PASSWORD:-dockside}
+      DB_NAME: ${DB_NAME:-dockside}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - dockside-net
+
+  # Frontend web server and reverse proxy (Nginx)
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    container_name: dockside-frontend
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - dockside-net
+
+volumes:
+  db_data:
+    name: dockside_db_data
+
+networks:
+  dockside-net:
+    name: dockside-network
+    driver: bridge
