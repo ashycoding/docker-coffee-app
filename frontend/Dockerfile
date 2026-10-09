@@ -7,8 +7,8 @@ COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 COPY frontend/public/ /usr/share/nginx/html/
 
 # Copy founder image directly from root
-COPY IMG_2099.JPG /usr/share/nginx/html/ashok.jpg
-COPY IMG_2099.JPG /usr/share/nginx/html/IMG_2099.JPG
+#COPY IMG_2099.JPG /usr/share/nginx/html/ashok.jpg
+#COPY IMG_2099.JPG /usr/share/nginx/html/IMG_2099.JPG
 
 EXPOSE 80
 
